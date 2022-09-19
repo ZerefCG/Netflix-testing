@@ -1,0 +1,221 @@
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   background-image: url(../img/zgeTuV.jpg);
+   margin:0;
+   padding: 0; 
+}
+
+header h1{
+    width: 90%;
+    margin: 0 auto;
+    padding-top:1rem;
+    font-size: 3rem;
+    color: red;
+}
+
+
+
+.container{
+    max-width: 1100px;
+    margin: 1rem auto 4rem auto;
+    
+}
+
+.container a{
+    text-decoration: none;
+}
+
+/* CONTAINER FORMS */
+
+.container-form{
+    width: 90%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+   
+    
+  
+}
+
+/* STYLE FORMS WITH DISPLAY FLEX */
+
+.container-form form{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    margin-top: 2rem;
+    max-width: 100%;
+    background-color: rgba(0,0,0,0.85);
+
+    
+}
+
+.container-form form legend{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+}
+
+
+/* INPUT STYLES */
+
+.container-form form input[type="email"],
+.container-form form input[type="password"]
+{
+    font-size: 0.9rem;
+    padding: 1rem 6.5rem 1rem 0.9rem;
+    border-radius: 0.4rem;
+    border: 1px solid ;
+    margin-bottom: 1.5rem;
+    background-color: #323232;
+}
+
+
+/* INPUT SUBMIT */
+
+.container-form form input[type="submit"]{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    background-color: #E50914;
+    color: white;
+    border: none;
+    font-size:1rem;
+    font-weight: lighter;
+    border-radius: 0.4rem;
+    
+}
+
+/* HOVER SUBMIT */
+.container-form form input[type="submit"]:hover{
+    background-color: #b60912;
+    transition: 0.2s all;
+}
+
+/* REMEMBER ME AND HELP */
+
+.remember-help{
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8rem;
+
+}
+
+.remember-help label{
+    color: #8C8C8C ;
+}
+
+.remember-help a{
+    color: #8C8C8C;
+}
+
+/* BOTTOM FORM CONTENT */
+
+.bottom-content{
+    width: 100%;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #8C8C8C;
+}
+
+.bottom-content a{
+    color: inherit;
+}
+
+.bottom-content .white{
+    color: #f2f2f2;
+}
+
+/* HOVER EFFECTS */
+
+.container-form a:hover{
+    text-decoration: underline;
+    transition: 0.2s all;
+ }
+
+
+ /* FOOTER SECTION */
+
+footer{
+    width: 100%;
+    padding: 1rem 0 3rem 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #8C8C8C;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+footer a{
+    color: inherit;
+    font-size: 0.9rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+   
+}
+
+/* HOVER  */
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer .container {
+    max-width: 50%;
+    
+}
+
+footer select{
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+    outline: none;
+    border-radius: 0.3rem;
+    font-size: 0.8rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:500px)
+{       
+   /* HEADER */
+   
+   header h1{
+    text-align: center;
+}
+
+/* CONTAINER FORM LEGEND */
+
+    .container-form legend{
+        text-align: center;
+    }
+
+/* CONTAINER-FORM  */
+    .container-form{
+        display: block;
+        width: 100%;
+    }
+    
+    .container-form form{
+        padding:1.5rem;
+    }
+
+    .container-form form input[type="email"], 
+    .container-form form input[type="password"]
+    {
+        padding: 1rem 0.5rem 1rem 0.9rem;
+    }
+
+
+    /* BOTTOM CONTENT */
+    .bottom-content{
+        text-align: center;
+    }
+}
